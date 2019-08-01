@@ -1,5 +1,6 @@
 import React from 'react';
 import Task from './Task';
+import './TaskList.css';
 
 const TaskList = props => {
 
@@ -37,16 +38,17 @@ const TaskList = props => {
   return ( 
     <>
     <div className="active">
-      <h2>Zadania do zrobienia: </h2>
-      {activeTasks.length > 0 ? activeTasks : "Brak zadań..."}
+      <h2>You have to do... </h2>
+      {activeTasks.length > 0 ? activeTasks : <span className="info">You don't have things to do!</span>}
     </div>
 
     <hr/>
 
     <div className="done">
-    <h3>Zadania zrobione <em>( {done.length} )</em> </h3>
+    <h3>The task, which you have done <em>( {done.length} )</em> </h3>
+    {doneTasks.length > 1 && <span className="info">We display max. 5 tasks.</span> }
     {doneTasks.slice(0, 3)}
-    {doneTasks.length > 2 && <span>wyświetlane są tylko 3 elementy</span> }
+    
   </div>
   </>
    );

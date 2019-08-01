@@ -1,0 +1,45 @@
+div.taskToDo, div.taskDone{
+  margin: 1vh auto;
+  padding: 5px 3vw;
+  background-color: rgb(103, 177, 101);
+  border-radius: 5px;
+  color:white;
+  max-width: 750px;
+}
+
+div.taskToDo button,
+div.taskDone button{
+  margin: 0.5vh;
+  padding: 5px 12px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 3px;
+  color:white;
+  transition:  .3s;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+div.taskToDo button:hover,
+div.taskDone button:hover{
+  opacity: 1;
+  background-color: #fff;
+  color: rgb(103, 177, 101);
+}
+
+div.taskDone {
+  background-color: rgba(104, 177, 101, 0.8);
+}
+
+div.taskDone::after{
+left: 0
+}
+div.taskDone button{ 
+  font-size: 0.8rem;
+}
+
+span.info{
+  margin: 5vh;
+}

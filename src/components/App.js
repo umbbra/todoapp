@@ -90,7 +90,11 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-      <h1>TO DO APP - you can do it!</h1>
+      <div className="logo">
+      <p>TO DO APP </p>
+      <p>You can do it!!!</p>
+      <hr />
+      </div>
       <AddTask addTask={this.addTask}/>
       <TaskList tasks={this.state.tasks} delete={this.deleteTask} change={this.changeTaskStatus}/>
       </div>

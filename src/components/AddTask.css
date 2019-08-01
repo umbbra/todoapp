@@ -1,15 +1,116 @@
-input{
-  margin: 10px;
-  padding: 5px 10px;
-  font-size: 20px;
+hr{
+  width: 60%;
+  max-width: 700px;
+  color:white;
 }
 
 .form{
-  font-size: 20px;
+  padding: 10vh 1vw;
+  font-size: 1.4rem;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgb(103, 177, 101);
+  color:white;
+  border-radius: 0 0 10px 10px;
 }
 
+input{
+  margin: 2vh;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(192, 192, 192);
+  font-size: 1rem;
+  color: rgb(233, 233, 233);
+}
+
+input:focus{
+  border-color: white;
+  color:white;
+}
+
+
 .form button{
+  display: block;
+  margin: 3vh auto 0;
   padding: 3px 10px;
-  text-transform: uppercase ;
-  margin: 20px;
+  width: 23vw;
+  height: 8vh;
+  max-width:150px;
+  max-height: 70px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 3px;
+  color:white;
+  transition:  .3s;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.form button:hover{
+  opacity: 1;
+  background-color: #fff;
+  color: rgb(103, 177, 101);
+  font-size: 1.5rem;
+  animation: shake 1s linear infinite;
+}
+input[type="checkbox"]{
+  margin-bottom:0;
+}
+
+@keyframes shake{
+  0%{
+    transform: translateX(0);
+  }
+  10%{
+    transform: translateX(-5%);
+  }
+  20%{
+    transform: translateX(5%);
+  }
+  30%{
+    transform: translateX(-5%);
+  }
+  40%{
+    transform: translateX(5%);
+  }
+  45%{
+    transform: translateX(-5%);
+  }
+  100%{
+    transform: translateX(0);
+
+  }
+}
+
+@media(min-width: 452px){
+    .form{
+      padding: 10vh 10vw;
+    }
+}
+
+
+@media(min-width: 520px){
+  .form{
+    padding: 10vh 5vw;
+  }
+}
+@media(min-width:1024px){
+  input[type="checkbox"]{
+   display: inline;
+  }
+
+  .form, input{
+    font-size: 1.8rem;
+  }
+  
+}
+
+@media(min-width:1450px){
+  button{
+
+  }
+
+  
 }
