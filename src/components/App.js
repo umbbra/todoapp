@@ -5,12 +5,12 @@ import './App.css';
 
 class App extends Component {
 
-  counter = 4;
+  counter = 2;
   state = {
     tasks: [
       {
         id:0,
-        text: "Napisać aplikację oszczędzanie",
+        text: "example with priority",
         date: '2019-08-15',
         important: true,
         active: true,
@@ -18,25 +18,9 @@ class App extends Component {
       },
       {
         id:1,
-        text: "Napisać do końca todo i wrzucić na githuba",
-        date: '2019-08-10',
+        text: "example number 1",
+        date: '2019-08-15',
         important: false,
-        active: true,
-        finishDate: null
-      },
-      {
-        id:2,
-        text: "Przeczytać rozdział książki",
-        date: '2019-07-30',
-        important: false,
-        active: true,
-        finishDate: null
-      },
-      {
-        id:3,
-        text: "Pójść na meetup o książce",
-        date: '2019-07-31',
-        important: true,
         active: true,
         finishDate: null
       },

@@ -8,7 +8,7 @@ hr{
   padding: 10vh 1vw;
   font-size: 1.4rem;
   font-family: 'Raleway', sans-serif;
-  background-color: rgb(103, 177, 101);
+  background-color: rgba(104, 177, 101, 0.815);
   color:white;
   border-radius: 0 0 10px 10px;
 }
@@ -93,6 +93,7 @@ input[type="checkbox"]{
 
 @media(min-width: 520px){
   .form{
+    font-size: 2rem;
     padding: 10vh 5vw;
   }
 }
@@ -104,13 +105,8 @@ input[type="checkbox"]{
   .form, input{
     font-size: 1.8rem;
   }
-  
-}
-
-@media(min-width:1450px){
-  button{
-
+  .form{
+    padding:5vh;
   }
-
   
 }

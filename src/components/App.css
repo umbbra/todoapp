@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro&display=swap');
 
+body{
+  background-image: url(./img/bgc.png)
+}
 .App {
   display: flex;
-flex-direction: column;
-max-width: 1200px;
-align-content: center;
-margin: 0 auto;
-border-radius: 5px;
+  flex-direction: column;
+  max-width: 1200px;
+  align-content: center;
+  margin: 0 auto;
+  border-radius: 5px;
 }
 
 div.logo{
@@ -14,7 +17,7 @@ div.logo{
   top:0;
   left:0;
   right:0;
-  background-color: rgb(103, 177, 101);
+  background-color: rgb(104, 177, 101);
   color:white;
   font-size: 2rem;
   font-family: 'Source Sans Pro', sans-serif;
