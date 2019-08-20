@@ -41,7 +41,7 @@ class AddTask extends Component {
       })
     }
   } else {
-    alert("Za krótka nazwa")
+    alert("Too short name...")
   }
 }
 

@@ -30,9 +30,6 @@ class App extends Component {
   deleteTask = (id) => {
    let tasks = [...this.state.tasks];
 
-  //  const index = tasks.findIndex(task => tasks.id === id);
-  //  deletetask = tasks.splice(index, 1)
-
    let newTasks = tasks.filter(el => el.id !== id);
    this.setState({
     tasks : newTasks

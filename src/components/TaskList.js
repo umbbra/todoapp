@@ -45,7 +45,7 @@ const TaskList = props => {
     <hr/>
 
     <div className="done">
-    <h3>The task, which you have done <em>( {done.length} )</em> </h3>
+    <h3>Completed tasks: <em>( {done.length} )</em> </h3>
     {doneTasks.length > 1 && <span className="info">We display max. 5 tasks.</span> }
     {doneTasks.slice(0, 3)}
     
